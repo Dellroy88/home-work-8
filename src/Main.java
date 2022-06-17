@@ -1,6 +1,6 @@
 public class Main {
-    public static void camelCase(int leapYears) {
-        if (leapYears % 4 == 0 || leapYears % 400 == 0 && leapYears % 100 != 0) {
+    public static void checkingYears(int leapYears) {
+        if (leapYears % 4 == 0 && leapYears % 100 != 0 || leapYears % 400 == 0) {
             System.out.println(leapYears + " год является високосным");
         } else {
             System.out.println(leapYears + " год не является високосным");
@@ -35,11 +35,11 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Задание 1");
-        int year = 2020;
-        camelCase(year);
+        int year = 2000;
+        checkingYears(year);
         System.out.println("Задание 2");
-        int clientDeviceYear = 2014;
-        int cllientDevice = 1;
+        int clientDeviceYear = 2015;
+        int cllientDevice = 0;
         checkingTheDevice(cllientDevice);
         checkingTheDeviceYear(clientDeviceYear);
         System.out.println("Задача 3");
